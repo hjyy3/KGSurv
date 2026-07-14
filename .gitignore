@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.log
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+output/
+source/input_data/
+ref_KG/
+*.npz
+*.maf
+*.vcf
+*.vcf.gz
+*.env
+!config/*.env.example

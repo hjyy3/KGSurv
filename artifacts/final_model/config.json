@@ -1,0 +1,93 @@
+{
+  "spec": {
+    "model": "path_attn",
+    "kg": "primekg",
+    "node_types": [
+      "ppi"
+    ],
+    "combo_tag": "ppi",
+    "seed": 74,
+    "fold": 2,
+    "fmb_variant": "mg2"
+  },
+  "device": "cuda",
+  "torch": "2.5.1+cu121",
+  "numpy": "2.2.6",
+  "best_val_ci": 0.6297506384257173,
+  "n_epochs_run": 16,
+  "epochs_max": 80,
+  "hidden": 32,
+  "dropout": 0.1,
+  "lr": 0.001,
+  "wd": 0.0001,
+  "batch": 64,
+  "patience": 15,
+  "roc_time": 24.0,
+  "train_n": 1174,
+  "train_median": -0.5343829393386841,
+  "cutoff_meta": {
+    "c2": {
+      "threshold": -0.5343829393386841,
+      "rule": "train_median"
+    },
+    "c3": {
+      "threshold": -0.7314054369926453,
+      "n_pos": 553,
+      "n_neg": 191,
+      "fpr": 0.4293193717277487,
+      "tpr": 0.7269439421338155,
+      "distance": 0.508797340478633,
+      "fallback": null,
+      "rule": "roc24m"
+    },
+    "c4": {
+      "threshold": -0.8567376136779785,
+      "n_pos": 553,
+      "n_neg": 191,
+      "fpr": 0.5130890052356021,
+      "tpr": 0.8318264014466547,
+      "youden": 0.31873739621105257,
+      "fallback": null,
+      "rule": "youden24m"
+    },
+    "c5": {
+      "threshold": -0.3345101475715637,
+      "rule": "p60"
+    },
+    "c6": {
+      "threshold": -0.2019312083721161,
+      "rule": "p67"
+    },
+    "c7": {
+      "threshold": -0.07365480810403824,
+      "rule": "p75"
+    },
+    "c8": {
+      "threshold": -0.5090101957321167,
+      "n_pos": 435,
+      "n_neg": 525,
+      "fpr": 0.3504761904761905,
+      "tpr": 0.6091954022988506,
+      "distance": 0.5249398000485962,
+      "fallback": null,
+      "rule": "roc12m"
+    },
+    "c9": {
+      "threshold": -0.7314054369926453,
+      "n_pos": 581,
+      "n_neg": 77,
+      "fpr": 0.3116883116883117,
+      "tpr": 0.7177280550774526,
+      "distance": 0.4205080909250947,
+      "fallback": null,
+      "rule": "roc36m"
+    },
+    "c10": {
+      "threshold": -0.7085622549057007,
+      "rule": "train_mean"
+    }
+  },
+  "fixed_max_n_sig": 8,
+  "state_dict_hash": "c68cda76b8dde9103a9aec5bcd2b3d4acc20fb950acff1dd62083ce3a1ff66aa",
+  "elapsed_s": 8.720245838165283
+}
